@@ -1,19 +1,11 @@
-#!/bin/sh
+#!/bin/bash
 
-cd ~/android/system/device/common
-git merge --abort
-echo "Unmerged gps patch.\n"
+STR="git merge --abort"
+declare -a arr=(device/common frameworks/native frameworks/av)
 
-# cd ~/android/system/external/wpa_supplicant_8
-# git merge --abort
-# echo "Unmerged wep fix.\n"
+for i in ${arr[@]}; do
+	cd $HOME/android/system/$i
+	$STR; echo $STR: $i 
+done
 
-cd ~/android/system/frameworks/native
-git merge --abort
-echo "Unmerged camera fix.\n"
-
-cd ~/android/system/frameworks/av
-git merge --abort
-echo "Unmerged av fix.\n"
-
-echo "Done."
+echo Done.
