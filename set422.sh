@@ -20,3 +20,4 @@ for i in ${arr[@]}; do
 done
 
 echo Done.
+exit 0
