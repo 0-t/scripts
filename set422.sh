@@ -12,7 +12,7 @@ else
 	exit 0
 fi
 
-declare -a arr=(device/common frameworks/native hardware/qcom/audio-caf hardware/qcom/gps)
+declare -a arr=(device/common frameworks/native hardware/qcom/audio-caf)
 
 for i in ${arr[@]}; do
 	cd $HOME/android/system/$i
