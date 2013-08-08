@@ -1,12 +1,12 @@
 #!/bin/bash
 
-SRC="$HOME/android/system/out/target/product/ancora_tmo/"
-MOD="system/lib/modules/*"
+SRC="$HOME/android/system/out/target/product/ancora_tmo"
 DST="$HOME/android/system/device/samsung/ancora_tmo/prebuilt/"
 
-IMG="$SRC/obj/KERNEL_OBJ/arch/arm/boot/zImage"
+cp -vfp $SRC/system/lib/modules/* $DST
+cp -vfp $SRC/obj/KERNEL_OBJ/arch/arm/boot/zImage $DST
 
-cp -vfp $SRC/$MOD $DST
-cp -vfp $IMG $DST
+cd $DST
+git add . && git commit -m "Update prebuilts"
 
 echo "Done!"
