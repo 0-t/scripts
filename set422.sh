@@ -12,7 +12,8 @@ else
 	exit 0
 fi
 
-declare -a arr=(device/common frameworks/native hardware/qcom/audio-caf)
+declare -a arr=(device/common frameworks/native hardware/qcom/media hardware/qcom/media-caf 
+hardware/qcom/audio-caf frameworks/av frameworks/opt/telephony frameworks/base hardware/qcom/wlan dalvik)
 
 for i in ${arr[@]}; do
 	cd $HOME/android/system/$i
@@ -20,4 +21,4 @@ for i in ${arr[@]}; do
 done
 
 echo Done.
-exit 0
+
