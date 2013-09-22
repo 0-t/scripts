@@ -12,8 +12,8 @@ else
 	exit 0
 fi
 
-declare -a arr=(device/common frameworks/native hardware/qcom/media hardware/qcom/media-caf 
-hardware/qcom/audio-caf frameworks/av frameworks/opt/telephony frameworks/base hardware/qcom/wlan dalvik)
+declare -a arr=(frameworks/av frameworks/base frameworks/native frameworks/opt/telephony
+hardware/qcom/audio-caf hardware/qcom/media hardware/qcom/media-caf hardware/qcom/wlan)
 
 for i in ${arr[@]}; do
 	cd $HOME/android/system/$i
@@ -21,4 +21,6 @@ for i in ${arr[@]}; do
 done
 
 echo Done.
+exit 0
 
+# packages/apps/Torch packages/apps/Trebuchet device/common(gps) dalvik(merged)
