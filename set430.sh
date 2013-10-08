@@ -12,7 +12,7 @@ if [ "$1" = "noff" ]; then
 	STR=$NOFF
 elif [ "$1" = "abrt" ]; then
 	STR=$ABRT
-elif [ "$1" = "cp_preblt" ]; then
+elif [ "$1" = "preblt" ]; then
 	copy_prebuilts
 else
 	echo "Try again."
