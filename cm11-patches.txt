@@ -1,0 +1,83 @@
+cd frameworks/av
+https://github.com/arco/android_frameworks_av/commit/18404dbf225c5473eb0d5a24c4782480c1120d34 - ny- camera params - use SAMSUNG_CAMERA_LEGACY
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_av refs/changes/68/55468/1 && git cherry-pick FETCH_HEAD -- enable lpa/tunnel -- updated
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_av refs/changes/68/55468/2 && git cherry-pick FETCH_HEAD -- /rm
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_av refs/changes/43/56443/1 && git cherry-pick FETCH_HEAD - merged
+---
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_av refs/changes/61/56361/2 && git cherry-pick FETCH_HEAD -- camcorder
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_av refs/changes/68/55468/4 && git cherry-pick FETCH_HEAD - lpa
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_av refs/changes/02/56502/1 && git cherry-pick FETCH_HEAD -- sf
+
+cd frameworks/base
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/30/55930/3 && git cherry-pick FETCH_HEAD
+
+cd frameworks/native
+git cherry-pick dd173dc2a7d8828363a279972e3f391d73b329ab -- Overlay support for legacy camera libs -- /u
+git cherry-pick f75180e0d93a3321a6276c256b29fb2f61ac6f3d -- MemoryHeapBase: ifdef for gingerbread/froyo compatibility -- /u
+--------
+
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_native refs/changes/62/53162/6 && git cherry-pick FETCH_HEAD -- screenshot
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_native refs/changes/47/55247/2 && git cherry-pick FETCH_HEAD -- libui fix crash
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_native refs/changes/57/54257/5 && git cherry-pick FETCH_HEAD -- old egl - use fnw
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_native refs/changes/94/52994/3 && git cherry-pick FETCH_HEAD -- gui: Allow disable fence sync
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_native refs/changes/73/55873/1 && git cherry-pick FETCH_HEAD -- null check
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_native refs/changes/75/55875/1 && git cherry-pick FETCH_HEAD -- libgui: Add native window attributes
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_native refs/changes/76/55876/1 && git cherry-pick FETCH_HEAD -- SurfaceFlinger: Change to support framebuffer flip 
+
+git cherry-pick ef9ca19d0ce4bd0f9af8f15e611a913d92065cd9 -- Raise MIN_UNDEQUEUED_BUFFERS to 3 -- /rv
+
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_native refs/changes/62/53162/5 && git cherry-pick FETCH_HEAD -- updated
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_native refs/changes/94/52994/3 && git cherry-pick FETCH_HEAD -- disable fence sync -- reverted
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_native refs/changes/57/54257/4 && git cherry-pick FETCH_HEAD -- old egl -- use_fnw - upgraded
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_native refs/changes/47/55247/1 && git cherry-pick FETCH_HEAD -- libui fix crash -- updated
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_native refs/changes/63/53163/6 && git cherry-pick FETCH_HEAD -- surface_skip_dq -- reverted
+
+2d92b55a15c0b2d116214a8fd03a9ae4f09b2069 -- gui: Allow devices to disable fence sync - /rm
+c9b8404c242a1ace5bccd613ca89d818e49ad3a4 -- DisplayDevice: Backwards compatibility with old EGL - /rm
+----
+
+cd system/core
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_system_core refs/changes/97/53397/1 && git cherry-pick FETCH_HEAD get rid of hal pixel formats -- /rm
+
+cd build
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_build refs/changes/29/53029/1 && git cherry-pick FETCH_HEAD - version 19
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_build refs/changes/59/53559/6 && git cherry-pick FETCH_HEAD -- set-metadata -- abandoned
+
+cd bionic
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_bionic refs/changes/09/54209/5 && git cherry-pick FETCH_HEAD scorpion - changed to cortex-a8 -- switch to 56062
+
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_bionic refs/changes/62/56062/2 && git cherry-pick FETCH_HEAD -- unbreak build for scorpion
+
+cd apps/Settings
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Settings refs/changes/03/54903/4 && git cherry-pick FETCH_HEAD -- updated
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Settings refs/changes/03/54903/7 && git cherry-pick FETCH_HEAD
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Settings refs/changes/16/56516/3 && git cherry-pick FETCH_HEAD -- sdswap
+
+cd hardware/qcom/display-caf
+
+cd hardware/qcom/media-caf
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_media-caf refs/changes/08/56308/1 && git cherry-pick FETCH_HEAD
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_media-caf refs/changes/09/56309/1 && git cherry-pick FETCH_HEAD
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_media-caf refs/changes/10/56310/1 && git cherry-pick FETCH_HEAD
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_media-caf refs/changes/11/56311/1 && git cherry-pick FETCH_HEAD
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_media-caf refs/changes/12/56312/1 && git cherry-pick FETCH_HEAD
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_media-caf refs/changes/13/56313/1 && git cherry-pick FETCH_HEAD
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_media-caf refs/changes/14/56314/1 && git cherry-pick FETCH_HEAD
+
+cd hardware/qcom/media-legacy
+
+cd android/packages/apps/Camera2
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Camera2 refs/changes/95/53595/7 && git cherry-pick FETCH_HEAD -- sam camcorder support
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Camera2 refs/changes/03/53603/6 && git cherry-pick FETCH_HEAD -- set video size
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Camera2 refs/changes/04/53604/6 && git cherry-pick FETCH_HEAD -- preview size
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Camera2 refs/changes/87/54387/4 && git cherry-pick FETCH_HEAD -- use for preview
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Camera2 refs/changes/48/56348/4 && git cherry-pick FETCH_HEAD -- thorough compatibility fixes
+
+cd packages/apps/Mms
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Mms refs/changes/77/54977/3 && git cherry-pick FETCH_HEAD -- add delay
+
+cd dalvik
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_dalvik refs/changes/64/56564/1 && git cherry-pick FETCH_HEAD
+
+cd system/vold
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_system_vold refs/changes/15/56515/1 && git cherry-pick FETCH_HEAD
