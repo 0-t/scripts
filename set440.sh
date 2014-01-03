@@ -12,7 +12,7 @@ else
 	exit 0
 fi
 
-declare -a arr=(build dalvik frameworks/av frameworks/base frameworks/native hardware/qcom/audio-caf hardware/qcom/display-caf hardware/qcom/media-caf packages/apps/Settings system/vold vendor/cm)
+declare -a arr=(frameworks/base frameworks/native hardware/qcom/display-caf hardware/qcom/media-caf packages/apps/Settings system/vold vendor/cm)
 
 for i in ${arr[@]}; do
 	cd $HOME/android/system/$i
@@ -25,4 +25,4 @@ exit 0
 # hardware/libhardware_legacy packages/apps/Gallery2 packages/apps/Dialer system/vold system/core 
 # packages/services/Telephony packages/providers/TelephonyProvider packages/apps/Mms packages/apps/Settings 
 # hardware/qcom/media  hardware/qcom/wlan packages/apps/Torch
-# packages/apps/Camera2 bionic
+# packages/apps/Camera2 bionic build dalvik frameworks/av hardware/qcom/audio-caf
