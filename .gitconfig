@@ -2,10 +2,10 @@
 	st = status
 	staged = diff --cached
 	br = branch
-  	co = checkout
-    cob = checkout -b
-  	df = diff
-  	lp = log -p
+	co = checkout
+	cob = checkout -b
+	df = diff
+	lp = log -p
 	cp = cherry-pick
 	cpa = cherry-pick --abort
 	cpc = cherry-pick --continue
@@ -13,3 +13,5 @@
 	anc = !git add . && git commit -m
 	on = !git merge --no-ff --no-commit
 	off = merge --abort
+	cl = clean -f -d
+	cod = checkout -- .
