@@ -12,7 +12,10 @@ else
 	exit 0
 fi
 
-declare -a arr=(build frameworks/base frameworks/native frameworks/webview hardware/qcom/audio-caf hardware/qcom/display-caf packages/apps/Settings system/vold vendor/cm)
+declare -a arr=(build frameworks/av frameworks/base frameworks/native frameworks/rs frameworks/webview 
+                hardware/qcom/audio-caf hardware/qcom/display-caf packages/apps/Settings system/vold vendor/cm
+                packages/apps/Dialer packages/services/Telephony packages/apps/InCallUI packages/apps/ContactsCommon
+                packages/providers/MediaProvider external/openssl external/clang packages/apps/Contacts development)
 
 for i in ${arr[@]}; do
 	cd $HOME/android/system/$i
