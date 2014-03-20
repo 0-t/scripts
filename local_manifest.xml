@@ -5,26 +5,6 @@
    fetch=".."
    review="review.cyanogenmod.org" />
 
-<!-- <remove-project name="CyanogenMod/android_frameworks_native" />
-<remove-project name="CyanogenMod/android_hardware_qcom_media-caf" />
-<remove-project name="CyanogenMod/android_hardware_qcom_display-caf" />
-<remove-project name="CyanogenMod/android_hardware_qcom_audio-caf" />
-<remove-project name="CyanogenMod/android_packages_apps_Settings" />
-<remove-project name="CyanogenMod/android_frameworks_base" />
-<remove-project name="CyanogenMod/android_system_vold" />
-<remove-project name="CyanogenMod/android_vendor_cm" />
-<project path="device/samsung/ancora_tmo" name="jfbs/android_device_samsung_ancora-tmo" remote="github" revision="cm-11.0_hybrid"/>
-<project path="vendor/samsung/ancora_tmo" name="jfbs/android_vendor_samsung_ancora-tmo" remote="github" revision="cm-11.0_ion"/>
-<project path="kernel/samsung/ancora_tmo" name="jfbs/samsung-kernel-msm7x30" remote="github" revision="cm-11.0_ion_"/>
-<project path="hardware/qcom/media-caf" name="jfbs/android_hardware_qcom_media-caf" remote="github" revision="cm440"/>
-<project path="hardware/qcom/display-caf" name="jfbs/android_hardware_qcom_display-caf" remote="github" revision="cm440"/>
-<project path="hardware/qcom/audio-caf" name="jfbs/android_hardware_qcom_audio-caf" remote="github" revision="cm440"/>
-<project path="frameworks/base" name="jfbs/android_frameworks_base" remote="github" revision="cm440"/>
-<project path="frameworks/native" name="jfbs/android_frameworks_native" remote="github" revision="cm440"/>
-<project path="packages/apps/Settings" name="jfbs/android_packages_apps_Settings" remote="github" revision="cm440"/>
-<project path="system/vold" name="jfbs/android_system_vold" remote="github" revision="cm440"/>
-<project path="vendor/cm" name="jfbs/android_vendor_cm" remote="github" revision="cm440"/>
-<project path="hardware/qcom/fm" name="CyanogenMod/android_hardware_qcom_fm" revision="cm-11.0" /> -->
   <project path="external/webkit" name="LegacyXperia/android_external_webkit" remote="github" revision="cm-11.0" />
   <project path="packages/apps/SamsungServiceMode" name="CyanogenMod/android_packages_apps_SamsungServiceMode" revision="cm-11.0" />
 </manifest>
