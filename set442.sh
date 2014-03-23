@@ -14,8 +14,9 @@ fi
 
 declare -a arr=(build external/clang external/openssl
                 frameworks/base frameworks/native frameworks/rs
-                hardware/qcom/audio-caf hardware/qcom/display-caf
-                packages/inputmethods/LatinIME vendor/cm)
+                hardware/qcom/audio-caf hardware/qcom/display-caf hardware/qcom/media-caf
+                packages/apps/Settings vendor/cm system/vold
+                packages/providers/DownloadProvider)
 
 for i in ${arr[@]}; do
 cd $HOME/android/system/$i
@@ -25,7 +26,7 @@ done
 echo Done.
 exit 0
 
-# packages/apps/Settings system/vold packages/services/Telephony development frameworks/webview
+# packages/services/Telephony development frameworks/webview packages/inputmethods/LatinIME
 # hardware/libhardware_legacy packages/apps/Gallery2 system/core
 # packages/providers/TelephonyProvider packages/apps/Mms
 # hardware/qcom/media hardware/qcom/wlan hardware/qcom/media-caf packages/apps/Torch
