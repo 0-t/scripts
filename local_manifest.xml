@@ -7,4 +7,5 @@
 
   <project path="external/webkit" name="LegacyXperia/android_external_webkit" remote="github" revision="cm-11.0" />
   <project path="packages/apps/SamsungServiceMode" name="CyanogenMod/android_packages_apps_SamsungServiceMode" revision="cm-11.0" />
+  <project path="packages/apps/PerformanceControl" name="horn3t/PerformanceControl" remote="private" revision="jb2"/>
 </manifest>
