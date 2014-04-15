@@ -12,7 +12,7 @@ echo "Try again."
 exit 0
 fi
 
-declare -a arr=(build frameworks/base frameworks/native
+declare -a arr=(build frameworks/base frameworks/native frameworks/rs
                 hardware/qcom/audio-caf hardware/qcom/display-caf 
                 packages/apps/Settings system/vold vendor/cm 
                 packages/providers/DownloadProvider)
@@ -25,7 +25,7 @@ done
 echo Done.
 exit 0
 
-# external/clang external/openssl hardware/qcom/media-caf frameworks/rs
+# external/clang external/openssl hardware/qcom/media-caf
 # packages/services/Telephony development frameworks/webview packages/inputmethods/LatinIME
 # hardware/libhardware_legacy packages/apps/Gallery2 system/core
 # packages/providers/TelephonyProvider packages/apps/Mms
