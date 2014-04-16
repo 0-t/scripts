@@ -12,9 +12,9 @@ echo "Try again."
 exit 0
 fi
 
-declare -a arr=(build frameworks/base frameworks/native frameworks/rs
-                hardware/qcom/audio-caf hardware/qcom/display-caf 
-                packages/apps/Settings system/vold vendor/cm 
+declare -a arr=(build frameworks/base frameworks/native frameworks/webview
+                hardware/qcom/audio-caf hardware/qcom/display-caf
+                packages/apps/Settings system/vold vendor/cm
                 packages/providers/DownloadProvider)
 
 for i in ${arr[@]}; do
@@ -25,10 +25,10 @@ done
 echo Done.
 exit 0
 
-# external/clang external/openssl hardware/qcom/media-caf
-# packages/services/Telephony development frameworks/webview packages/inputmethods/LatinIME
+# external/clang external/openssl hardware/qcom/media-caf frameworks/rs
+# packages/services/Telephony development packages/inputmethods/LatinIME
 # hardware/libhardware_legacy packages/apps/Gallery2 system/core
-# packages/providers/TelephonyProvider packages/apps/Mms
+# packages/providers/TelephonyProvider packages/apps/Mms packages/apps/Calculator 
 # hardware/qcom/media hardware/qcom/wlan hardware/qcom/media-caf packages/apps/Torch
 # packages/apps/Camera2 bionic dalvik external/chromium_org frameworks/av
 # packages/apps/Contacts packages/apps/Dialer packages/apps/InCallUI packages/apps/ContactsCommon packages/providers/MediaProvider
